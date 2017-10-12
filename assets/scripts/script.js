@@ -9,10 +9,28 @@
                  changeHash: true,
                  scrollSpeed: 500
             });
+  
+   $("#ul_pastevents li:nth-child(3)").nextAll().hide();
+
+   
 
 
 });
 
+function viewmore_pastevents(e)
+{
+   e.preventDefault();  
+   if($("#a_pastevents_viewmore").text() == "View More...")
+   { 
+        $("#a_pastevents_viewmore").text("View Less..");
+        $("#ul_pastevents li:nth-child(3)").nextAll().show();
+   }
+   else
+   {
+         $("#a_pastevents_viewmore").text("View More...");
+         $("#ul_pastevents li:nth-child(3)").nextAll().hide();
+   }
+}
 
 
   // animation
