@@ -1,0 +1,10 @@
+{
+  events:[
+    event:{
+       name: "HashBBC1",
+       date: "01/20/2024",
+       location: "Chicago",
+       image: null
+    }
+  ]
+}
